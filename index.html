@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PressClub</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md custom-nav">
+      <div class="container justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logo.svg" alt="PressClub" class="logo" />
+          </a>
+          <form class="form-inline ml-3 w-100 w-md-auto">
+            <div class="input-group w-100">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="btn-group d-flex flex-wrap custom-btn-group" role="single">
+          <button type="button" class="btn btn-feed">FEED</button>
+          <button type="button" class="btn btn-category">ADS</button>
+          <button type="button" class="btn btn-category">SERVICES</button>
+          <button type="button" class="btn btn-category">INTERVIEWS</button>
+          <button type="button" class="btn btn-category">ANCHORS</button>
+        </div>
+      </div>
+    </nav>
+    <nav class="nav sub-nav">
+      <div
+        class="container d-flex align-items-center justify-content-between flex-wrap"
+      >
+        <div class="d-flex align-items-center left-section">
+          <img src="./assets/menu-line.svg" alt="Menu" class="menu-icon" />
+          <ul class="nav ml-3 flex-wrap">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Public News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Personal News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link highlighted" href="#">Crime News</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="btn btn-sign-up d-flex align-items-center mt-2 mt-md-0"
+        >
+          Sign Up
+          <img
+            src="./assets/arrow-right-line.svg"
+            alt="Arrow Right"
+            class="ml-2"
+          />
+        </button>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4 shadow-sm h-100">
+            <img
+              src="./assets/image.svg"
+              class="card-img-top"
+              alt="Main news image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                After a decade, Kashmir to vote in historic elections
+              </h4>
+              <p class="card-text">
+                On a bright September afternoon, a caravan of colourful cars,
+                festooned with flags, arrives at a village in
+                Indian-administered Kashmir for an election rally. Iltija Mufti,
+                a politician from the Peoples Democratic Party (PDP), slowly
+                rises from the sunroof of one of the cars.
+              </p>
+              <p class="text-muted">24 minutes ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-4">
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="./assets/image-2.svg"
+                  class="card-img-top"
+                  alt="News image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The German woman who helped build an Indian university
+                  </h5>
+                  <p class="text-muted">24 minutes ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="./assets/image-3.svg"
+                  class="card-img-top"
+                  alt="News image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Bangladesh leader’s ‘megaphone diplomacy’ irks India
+                  </h5>
+                  <p class="text-muted">1 hour ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="./assets/image-4.svg"
+                  class="card-img-top"
+                  alt="News image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The midwives who stopped murdering girls and started saving
+                    them
+                  </h5>
+                  <p class="text-muted">3 hours ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="./assets/image-5.svg"
+                  class="card-img-top"
+                  alt="News image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The Perfect Couple: I liked that my character was
+                    objectified
+                  </h5>
+                  <p class="text-muted">3 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5 imgDiv">
+      <img
+        src="./assets/whatsapp_img.png"
+        class="whats-card-img-top img-fluid"
+        alt="News Image"
+      />
+    </div>
+
+    <div class="container my-5">
+      <h2 class="section-title">Nationality</h2>
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="news-card h-100 shadow-sm">
+            <img
+              src="./assets/image.svg"
+              class="news-card-img-top"
+              alt="News Image"
+            />
+            <div class="news-card-body">
+              <h5 class="news-card-title">
+                Video, Midwife's remorse: What are the hands that strangled the
+                girls in the womb doing now?
+              </h5>
+              <p class="text-muted">11 Sept 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="news-card h-100 shadow-sm">
+            <img
+              src="./assets/image-2.svg"
+              class="news-card-img-top"
+              alt="News Image"
+            />
+            <div class="news-card-body">
+              <h5 class="news-card-title">
+                Video, If you don't want rs. 2.5 crore lottery hit, period 1,56
+              </h5>
+              <p class="text-muted">11 Sept 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="news-card h-100 shadow-sm">
+            <img
+              src="./assets/image-3.svg"
+              class="news-card-img-top"
+              alt="News Image"
+            />
+            <div class="news-card-body">
+              <h5 class="news-card-title">
+                How is makhana grown? How did it become 'superfood'?
+              </h5>
+              <p class="text-muted">11 Sept 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="news-card h-100 shadow-sm">
+            <img
+              src="./assets/image-4.svg"
+              class="news-card-img-top"
+              alt="News Image"
+            />
+            <div class="news-card-body">
+              <h5 class="news-card-title">
+                INS Arighat: Can India compete with China with this nuclear
+                submarine?
+              </h5>
+              <p class="text-muted">9 Sept 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <h2 class="section-title">International</h2>
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="news-card h-100 shadow-sm">
+            <img
+              src="./assets/image.svg"
+              class="news-card-img-top"
+              alt="News Image"
+            />
+            <div class="news-card-body">
+              <h5 class="news-card-title">
+                Taylor Swift: "Kamala Harris is a warrior. My support is for
+                her."
+              </h5>
+              <p class="text-muted">11 Sept 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="news-card h-100 shadow-sm">
+            <img
+              src="./assets/image-2.svg"
+              class="news-card-img-top"
+              alt="News Image"
+            />
+            <div class="news-card-body">
+              <h5 class="news-card-title">
+                US Elections 2024: Who has the upper hand in Harris and Trump's
+                first debate?
+              </h5>
+              <p class="text-muted">11 Sept 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="news-card h-100 shadow-sm">
+            <img
+              src="./assets/image-3.svg"
+              class="news-card-img-top"
+              alt="News Image"
+            />
+            <div class="news-card-body">
+              <h5 class="news-card-title">
+                How is the US presidential election held? Can't you be the
+                president even if he gets the most votes?
+              </h5>
+              <p class="text-muted">11 Sept 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="news-card h-100 shadow-sm">
+            <img
+              src="./assets/image-4.svg"
+              class="news-card-img-top"
+              alt="News Image"
+            />
+            <div class="news-card-body">
+              <h5 class="news-card-title">
+                Titanic: What are the creatures that are eating this ship at the
+                bottom of the ocean, and how long will it disappear?
+              </h5>
+              <p class="text-muted">9 Sept 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">Most people have read</div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 mb-2 d-flex">
+          <span class="index mr-2">01.</span>
+          <span class="content"
+            >'If there are no words, why live now?' - Afghan women protest
+            against Taliban's new law</span
+          >
+        </div>
+        <div class="col-md-4 col-sm-6 mb-2 d-flex">
+          <span class="index mr-2">02.</span>
+          <span class="content"
+            >Abrosexuality: Once the boys are attracted to the boys, the other
+            time the desire arises on the girls</span
+          >
+        </div>
+        <div class="col-md-4 col-sm-6 mb-2 d-flex">
+          <span class="index mr-2">03.</span>
+          <span class="content"
+            >Is the delicious pulasa fish straining India-Bangladesh
+            relations?</span
+          >
+        </div>
+        <div class="col-md-4 col-sm-6 mb-2 d-flex">
+          <span class="index mr-2">04.</span>
+          <span class="content"
+            >How is makhana grown? How did it become 'superfood'?</span
+          >
+        </div>
+        <div class="col-md-4 col-sm-6 mb-2 d-flex">
+          <span class="index mr-2">05.</span>
+          <span class="content"
+            >Is the Makala jail the 'hell' on earth? Eat only once a day and
+            sleep on the walls of bathrooms. Where is the worst place to
+            be</span
+          >
+        </div>
+        <div class="col-md-4 col-sm-6 mb-2 d-flex">
+          <span class="index mr-2">06.</span>
+          <span class="content"
+            >Titanic: What are the creatures that are eating this ship at the
+            bottom of the ocean, and how long will it disappear?</span
+          >
+        </div>
+        <div class="col-md-4 col-sm-6 mb-2 d-flex">
+          <span class="index mr-2">07.</span>
+          <span class="content"
+            >Are these gorillas going to guide scientists in inventing new
+            drugs?</span
+          >
+        </div>
+        <div class="col-md-4 col-sm-6 mb-2 d-flex">
+          <span class="index mr-2">08.</span>
+          <span class="content"
+            >What is the history of Budamaru that submerged Vijayawada?</span
+          >
+        </div>
+        <div class="col-md-4 col-sm-6 mb-2 d-flex">
+          <span class="index mr-2">09.</span>
+          <span class="content"
+            >How is rainfall measured? What is the meaning of yellow, orange and
+            red alerts issued by the Meteorological Department?</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="top-bar">
+        <img src="./assets/rectangle-10.svg" alt="Top Bar" class="w-100" />
+      </div>
+      <footer class="footer-bg py-3">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <a href="#" class="footer-link">Terms of Use</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Contact the Press Club</a>
+            <a href="#" class="footer-link">About us</a>
+            <a href="#" class="footer-link">Cookies</a>
+            <a href="#" class="footer-link">Do not share ore sell my info</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
