@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 /* General Styles */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body{
+  background: #F2F2F2;
+  font-family: "Playfair Display", serif;
 }
 
 .navbar {
@@ -15,6 +22,56 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+}
+
+.mobile-menu{
+  background: #E6E7EB;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 999999;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 23px 18px 23px;
+  
+}
+.mobile-menu .btn{
+  font-family: "Roboto", sans-serif;
+  font-size:1rem;
+  color:#222222;
+  position: relative;
+  padding: 0 10px;
+  min-width: 20%;
+}
+
+.mobile-menu .btn.post span{
+  position: relative;
+    top: 14px;
+}
+
+.mobile-menu .btn img{
+  display: block;
+  margin: 0 auto 10px auto;
+}
+.mobile-menu .btn.post .icon img{
+  margin: 0 auto;
+}
+
+.mobile-menu .btn.post .icon{
+  position: absolute;
+  top: -56px;
+  margin-left: -32px;
+  left: 50%;
+  background: #B21903;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 8px 8px rgb(0, 0, 0, 0.25);
 }
 
 .logo {
@@ -192,7 +249,7 @@
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.025rem;
-  color: #999999;
+  color: #999999 !important;
 }
 
 .card-title {
@@ -225,6 +282,7 @@
 .news-card {
   border-radius: 0.5rem;
   overflow: hidden;
+  background: #fff;
 }
 .news-card-body {
   padding: 1rem;
@@ -279,6 +337,7 @@
   font-weight: 600;
   letter-spacing: -0.0625rem;
   line-height: 1.666rem;
+  margin-left: 10px;
 }
 .footer-container {
   display: flex;
@@ -341,4 +400,20 @@
 }
 .whats-card-img-top {
   margin: 0 auto;
+}
+
+
+@media(max-width:767px) {
+  .mobi-scroll-grid {
+    flex-wrap: nowrap;
+    overflow-x:auto;
+  }
+  .mobi-scroll-grid::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+  }
+  .card-title, .news-card-title{
+    font-size: 1rem;
+  }
+  
 }
