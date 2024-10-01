@@ -251,7 +251,16 @@ body{
   line-height: 1.025rem;
   color: #999999 !important;
 }
-
+.card-img {
+  height: 150px;
+  overflow: hidden;
+  background: #ededed;
+}
+.card-img img{
+  width: 100%;
+  margin: 0px 0px;
+  object-fit: contain;
+}
 .card-title {
   font-family: "Playfair Display", serif;
   font-weight: 600;
@@ -414,6 +423,9 @@ body{
   }
   .card-title, .news-card-title{
     font-size: 1rem;
+  }
+  .card-img{
+    height: 94px;
   }
   
 }
