@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PressClub</title>
+    <link
+      href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md custom-nav">
+      <div class="container justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logo.svg" alt="PressClub" class="logo" />
+          </a>
+          <form class="form-inline ms-3 w-100 w-md-auto">
+            <div class="input-group w-100">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </div>
+          </form>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="d-none d-md-block">
+          <div class="btn-group d-flex flex-wrap custom-btn-group">
+            <button type="button" class="btn btn-feed">FEED</button>
+            <button type="button" class="btn btn-category">ADS</button>
+            <button type="button" class="btn btn-category">SERVICES</button>
+            <button type="button" class="btn btn-category">INTERVIEWS</button>
+            <button type="button" class="btn btn-category">ANCHORS</button>
+          </div>
+        </div>
+        <!-- Desktop Menu End -->
+
+        <!-- Footer Menu   -->
+        <div class="d-block d-md-none">
+          <div class="mobile-menu">
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/ads.svg" /> Ads
+            </button>
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/services.svg" /> Services
+            </button>
+            <button type="button" class="btn post">
+              <div class="icon"><img src="assets/menu-icons/post.svg" /></div>
+              <span>Post</span>
+            </button>
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/interview.svg" /> Interviews
+            </button>
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/anchors.svg" /> Anchors
+            </button>
+          </div>
+        </div>
+        <!-- Footer End -->
+      </div>
+    </nav>
+    <nav class="nav sub-nav">
+      <div
+        class="container d-flex align-items-center justify-content-between flex-wrap"
+      >
+        <div class="d-flex align-items-center left-section">
+          <img src="./assets/menu-line.svg" alt="Menu" class="menu-icon" />
+          <ul class="nav ms-3 flex-wrap">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Public News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Personal News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link highlighted" href="#">Crime News</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btns_div">
+          <button
+            type="button"
+            class="btn btn-sign-up d-flex align-items-center mt-2 mt-md-0 d-none d-md-block"
+          >
+            New Post
+          </button>
+          <button
+            type="button"
+            class="btn btn-sign-up d-flex align-items-center mt-2 mt-md-0 d-none d-md-block"
+          >
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container custom_container">
+      <div class="main-container d-flex justify-content-between">
+        <!-- Main Article Section -->
+        <div class="col-lg-7 col-md-12 col-sm-12">
+          <!-- Badge -->
+          <div class="badge-custom">Trending</div>
+          <!-- Article Title and Content -->
+          <div>
+            <h1 class="title">
+              Abrosexuality: Once the boys are attracted to the boys, the other
+              time the desire arises on the girls..
+            </h1>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <div>
+              <img
+                src="./assets/detailsPage_assets/main-image.png"
+                class="img-fluid"
+                alt="Main Image"
+              />
+            </div>
+            <p class="content-text">
+              People with abrosexuality are completely attracted to men for a
+              few days.
+            </p>
+          </div>
+          <!-- Author and Action Links -->
+          <div class="d-flex justify-content-between border-custom">
+            <div class="person_details_div">
+              <p class="m-0">by <strong>Geetha Reddy</strong></p>
+              <p class="text-muted m-0">24 minutes ago</p>
+            </div>
+            <div class="d-flex gap-4">
+              <a class="anchor_tag">
+                <img
+                  src="./assets/detailsPage_assets/share-line.svg"
+                  alt="Share"
+                />
+              </a>
+              <a class="anchor_tag">
+                <img
+                  src="./assets/detailsPage_assets/mail-line.svg"
+                  alt="Mail"
+                />
+              </a>
+              <a class="anchor_tag">
+                <img src="./assets/detailsPage_assets/link-m.svg" alt="Link" />
+              </a>
+            </div>
+          </div>
+          <!-- Article Content -->
+          <div class="mt-5 mb-5">
+            <p class="content-text">
+              The experiences of people who do not feel sexual attraction have
+              been largely invisible on screen – even as characters from
+              Sherlock Holmes to Barbie have been read as asexual. But a new
+              romance is shining a light on them. <br /><br />
+              Cinema, as an audio-visual medium, offers seemingly endless
+              possibilities for representation. Film characters live and breathe
+              on the big screen and their presence can be self-affirming to
+              viewers of underrepresented groups or minorities. But screen
+              depiction relies on visual and aural markers – such as skin
+              colour, voices, and bodies – posing a challenge for the sexual
+              identity defined through lack: asexuality, the so-called
+              "invisible" orientation.
+              <br /><br />
+              An asexual (ace) person does not experience sexual attraction, as
+              defined by The Asexual Visibility and Education Network (AVEN), a
+              resource website and forum for the world’s largest online asexual
+              community. Past studies have suggested that around 1% of the
+              world's population is asexual, but it's difficult to gauge
+              exactly, because of the stigmatisation that still surrounds
+              asexuality, and the wide spectrum of inclinations and experiences
+              that can be classified as asexual.
+            </p>
+          </div>
+          <hr />
+          <!-- Latest Headlines Section -->
+          <div class="headline-container">
+            <h4 class="title">Latest Headlines</h4>
+            <div class="d-flex flex-column gap-4">
+              <div>
+                <p class="headline-time">3 hours ago</p>
+                <p class="headline-title">Helene downgraded to Category 1</p>
+              </div>
+              <div>
+                <p class="headline-time">9:55 AM IST</p>
+                <p class="headline-title">
+                  Hurricane Helene begins move towards southeastern Georgia
+                </p>
+              </div>
+              <div>
+                <p class="headline-time">9:05 AM IST</p>
+                <p class="headline-title">
+                  Hurricage Helene makes landfall in Florida.
+                </p>
+              </div>
+              <div>
+                <p class="headline-time">24 minutes ago</p>
+                <p class="headline-title">Hurriane Helene in photos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Sidebar with Top Stories -->
+        <div class="col-lg-4 offset-lg-1 col-md-6 col-sm-12">
+          <div class="headline-container">
+            <h2 class="top-stories-title">Top Stories</h2>
+            <div class="d-flex flex-column mt-3 gap-3">
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="assets/detailsPage_assets/img1.png"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <p class="headline-title">
+                    Hurricane Helene live updates: 3 dead, 2 million without
+                    power across 4 states.
+                  </p>
+                  <p class="headline-time">10 minutes ago</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="assets/detailsPage_assets/img1.png"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <p class="headline-title">
+                    Trump lobbied House GOP for last-minute change in government
+                    funding plan but failed.
+                  </p>
+                  <p class="headline-time">Sep 24, 4:06 AM</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="assets/detailsPage_assets/img1.png"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <p class="headline-title">
+                    Judges press New York AG as Trump appeals his $454M fraud
+                    judgment.
+                  </p>
+                  <p class="headline-time">Sep 27, 3:22 AM</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="assets/detailsPage_assets/img1.png"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <p class="headline-title">
+                    Americans can again order 4 free at-home COVID tests from
+                    federal government.
+                  </p>
+                  <p class="headline-time">Sep 26, 6:56 PM</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="assets/detailsPage_assets/img1.png"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <p class="headline-title">
+                    Springfield officials declined to speak with Vance amid
+                    claims about Haitian migrants
+                  </p>
+                  <p class="headline-time">Sep 27, 6:32 AM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container my-5">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card mb-4 shadow-sm h-100">
+            <img
+              src="./assets/image.svg"
+              class="card-img-top"
+              alt="Main news image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                After a decade, Kashmir to vote in historic elections
+              </h4>
+              <p class="card-text">
+                On a bright September afternoon, a caravan of colourful cars,
+                festooned with flags, arrives at a village in
+                Indian-administered Kashmir for an election rally. Iltija Mufti,
+                a politician from the Peoples Democratic Party (PDP), slowly
+                rises from the sunroof of one of the cars.
+              </p>
+              <p class="text-muted">24 minutes ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row g-4 mobi-scroll-grid">
+            <div class="col-4 col-lg-6 col-md-6 mb-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-img">
+                  <img
+                    src="./assets/image-2.svg"
+                    class="card-img-top"
+                    alt="News image"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The German woman who helped build an Indian university
+                  </h5>
+                  <p class="text-muted">24 minutes ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-lg-6 col-md-6 mb-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-img">
+                  <img
+                    src="./assets/image-3.svg"
+                    class="card-img-top"
+                    alt="News image"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Bangladesh leader’s ‘megaphone diplomacy’ irks India
+                  </h5>
+                  <p class="text-muted">1 hour ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-lg-6 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-img">
+                  <img
+                    src="./assets/image-4.svg"
+                    class="card-img-top"
+                    alt="News image"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The midwives who stopped murdering girls and started saving
+                    them
+                  </h5>
+                  <p class="text-muted">3 hours ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-lg-6 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-img">
+                  <img
+                    src="./assets/image-4.svg"
+                    class="card-img-top"
+                    alt="News image"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The Perfect Couple: I liked that my character was
+                    objectified
+                  </h5>
+                  <p class="text-muted">3 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="footer-container">
+      <div class="top-bar"></div>
+      <footer class="footer-bg py-3">
+        <div class="container">
+          <div class="text-center">
+            <a href="#" class="footer-link">Terms of Use</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Contact the Press Club</a>
+            <a href="#" class="footer-link">About us</a>
+            <a href="#" class="footer-link">Cookies</a>
+            <a href="#" class="footer-link">Do not share ore sell my info</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

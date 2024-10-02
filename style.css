@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* General Styles */
 * {
@@ -7,8 +6,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
-  background: #F2F2F2;
+body {
+  background: #f2f2f2;
   font-family: "Playfair Display", serif;
 }
 
@@ -24,8 +23,8 @@ body{
   gap: 1.5rem;
 }
 
-.mobile-menu{
-  background: #E6E7EB;
+.mobile-menu {
+  background: #e6e7eb;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -35,36 +34,35 @@ body{
   display: flex;
   justify-content: space-between;
   padding: 23px 23px 18px 23px;
-  
 }
-.mobile-menu .btn{
+.mobile-menu .btn {
   font-family: "Roboto", sans-serif;
-  font-size:1rem;
-  color:#222222;
+  font-size: 1rem;
+  color: #222222;
   position: relative;
   padding: 0 10px;
   min-width: 20%;
 }
 
-.mobile-menu .btn.post span{
+.mobile-menu .btn.post span {
   position: relative;
-    top: 14px;
+  top: 14px;
 }
 
-.mobile-menu .btn img{
+.mobile-menu .btn img {
   display: block;
   margin: 0 auto 10px auto;
 }
-.mobile-menu .btn.post .icon img{
+.mobile-menu .btn.post .icon img {
   margin: 0 auto;
 }
 
-.mobile-menu .btn.post .icon{
+.mobile-menu .btn.post .icon {
   position: absolute;
   top: -56px;
   margin-left: -32px;
   left: 50%;
-  background: #B21903;
+  background: #b21903;
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -256,7 +254,7 @@ body{
   overflow: hidden;
   background: #ededed;
 }
-.card-img img{
+.card-img img {
   width: 100%;
   margin: 0px 0px;
   object-fit: contain;
@@ -356,15 +354,16 @@ body{
 
 .top-bar {
   width: 100%;
-  background: #970202;
+  background: #b21903;
+  height: 1.5rem;
 }
 .footer-bg {
-  background-color: #13204a;
+  background-color: #29328b;
   color: white;
   padding: 40px 0;
 }
 .footer-bg .container {
-  padding: 2rem 0;
+  padding: 1.2rem 0 7rem 0;
 }
 
 .footer-link {
@@ -411,21 +410,134 @@ body{
   margin: 0 auto;
 }
 
-
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .mobi-scroll-grid {
     flex-wrap: nowrap;
-    overflow-x:auto;
+    overflow-x: auto;
   }
   .mobi-scroll-grid::-webkit-scrollbar {
-      width: 0px;
-      background: transparent;
+    width: 0px;
+    background: transparent;
   }
-  .card-title, .news-card-title{
+  .card-title,
+  .news-card-title {
     font-size: 1rem;
   }
-  .card-img{
+  .card-img {
     height: 94px;
   }
-  
+}
+
+/* details Page  */
+
+.custom_container {
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+}
+
+.btns_div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.badge-custom {
+  background-color: #b21903ff;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.25;
+  width: fit-content;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.666rem;
+  color: #222222ff;
+  margin: 2rem 0;
+}
+
+.content-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #222222ff;
+}
+
+.border-custom {
+  border-bottom: 1px solid #ccccccff;
+  padding: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.headline-container {
+  font-family: "Roboto", sans-serif;
+}
+.headline-container h4 {
+  font-family: "Roboto", sans-serif;
+}
+
+.headline-time {
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: #999999ff;
+}
+
+.headline-title {
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  color: #222222ff;
+}
+p {
+  margin: 0;
+}
+
+.top-stories-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.46875rem;
+  color: #222222ff;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person_details_div {
+  font-family: "Roboto", sans-serif;
+}
+.anchor_tag {
+  cursor: pointer;
+}
+.img_div {
+  object-fit: cover;
+  width: 4rem;
+  height: 4rem;
+  aspect-ratio: 1/1;
+}
+
+@media (max-width: 768px) {
+  .main-article,
+  .top-stories {
+    flex: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1140px;
+  }
 }
