@@ -13,7 +13,7 @@
   <body>
     <nav class="navbar navbar-expand-md custom-nav">
       <div class="container justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center" id="nav_div">
           <a class="navbar-brand" href="#">
             <img src="./assets/logo.svg" alt="PressClub" class="logo" />
           </a>
@@ -27,6 +27,29 @@
               />
             </div>
           </form>
+          <div class="icons_cont">
+            <div class="icon_div">
+              <img src="./assets/detailsPage_assets/icons-1.svg" alt="logo" />
+            </div>
+            <div class="icon_div">
+              <img src="./assets/detailsPage_assets/icons-1.svg" alt="logo" />
+            </div>
+            <div class="icon_div" id="search_cont">
+              <img src="./assets/detailsPage_assets/icons-1.svg" alt="search" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-none input-group w-100 d-flex custom_search_div"
+          id="search_div"
+        >
+          <input
+            type="text"
+            class="input_cont"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <p id="close_search">❌</p>
         </div>
         <!-- Desktop Menu -->
         <div class="d-none d-md-block">
@@ -293,6 +316,143 @@
         </div>
       </div>
     </div>
+
+    <div class="container register_form_container">
+      <form>
+        <div class="register_form-title">General Registration Form</div>
+
+        <div class="register_form-section">
+          <div class="register_form-title">Anchor Details</div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="register_form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="register_form-label">Last Name</label>
+              <input type="text" class="form-control" placeholder="Last Name" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="register_form-label">Phone Number</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Phone Number"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="register_form-label">Business E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Business E-mail"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="register_form-label">Aadhar Number</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Aadhar Number"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="register_form-label">Pan Number</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Pan Number"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="register_form-label">Description</label>
+            <textarea
+              class="form-control"
+              placeholder="Description"
+              rows="4"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="register_form-section">
+          <div class="register_form-title">Manager Details</div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="register_form-label">Manager Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Manager Name"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="register_form-label">Mobile Number</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Mobile Number"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="register_form-section">
+          <div class="register_form-title">Upload Photo</div>
+          <div class="row custom_upload_div">
+            <div class="col-md-8">
+              <label class="register_form-label">Photo</label>
+              <input type="file" class="form-control custom-file-input" />
+            </div>
+            <div class="col-md-4">
+              <button type="button" class="btn register_upload-btn">
+                Upload
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="register_form-section">
+          <div class="register_form-title">Profile Links</div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="register_form-label">First Link</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First Link"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="register_form-label">Second Link</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Second Link"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex">
+          <button type="reset" class="btn register_reset-btn">Reset All</button>
+          <button type="submit" class="btn register_submit-btn ms-3">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+
+
     <!-- <div class="container my-5">
       <div class="row">
         <div class="col-md-8">
@@ -412,5 +572,20 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("search_cont").addEventListener("click", () => {
+        document.getElementById("nav_div").classList.add("d-none");
+
+        document.getElementById("search_div").classList.remove("d-none");
+        document.getElementById("search_div").classList.add("d-block");
+      });
+      document.getElementById("close_search").addEventListener("click", () => {
+        document.getElementById("search_div").classList.remove("d-block");
+        document.getElementById("search_div").classList.add("d-none");
+
+        document.getElementById("nav_div").classList.remove("d-none");
+        document.getElementById("nav_div").classList.add("d-block");
+      });
+    </script>
   </body>
 </html>

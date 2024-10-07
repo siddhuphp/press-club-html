@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anchors</title>
+    <link
+      href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md custom-nav">
+      <div class="container justify-content-between align-items-center">
+        <div class="d-flex align-items-center" id="nav_div">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logo.svg" alt="PressClub" class="logo" />
+          </a>
+          <form class="form-inline ms-3 w-100 w-md-auto">
+            <div class="input-group w-100">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </div>
+          </form>
+          <div class="icons_cont">
+            <div class="icon_div">
+              <img src="./assets/detailsPage_assets/icons-1.svg" alt="logo" />
+            </div>
+            <div class="icon_div">
+              <img src="./assets/detailsPage_assets/icons-1.svg" alt="logo" />
+            </div>
+            <div class="icon_div" id="search_cont">
+              <img src="./assets/detailsPage_assets/icons-1.svg" alt="search" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-none input-group w-100 d-flex custom_search_div"
+          id="search_div"
+        >
+          <input
+            type="text"
+            class="input_cont"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <p id="close_search">❌</p>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="d-none d-md-block">
+          <div class="btn-group d-flex flex-wrap custom-btn-group">
+            <button type="button" class="btn btn-feed">FEED</button>
+            <button type="button" class="btn btn-category">ADS</button>
+            <button type="button" class="btn btn-category">SERVICES</button>
+            <button type="button" class="btn btn-category">INTERVIEWS</button>
+            <button type="button" class="btn btn-category">ANCHORS</button>
+          </div>
+        </div>
+        <!-- Desktop Menu End -->
+
+        <!-- Footer Menu   -->
+        <div class="d-block d-md-none">
+          <div class="mobile-menu">
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/ads.svg" /> Ads
+            </button>
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/services.svg" /> Services
+            </button>
+            <button type="button" class="btn post">
+              <div class="icon"><img src="assets/menu-icons/post.svg" /></div>
+              <span>Post</span>
+            </button>
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/interview.svg" /> Interviews
+            </button>
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/anchors.svg" /> Anchors
+            </button>
+          </div>
+        </div>
+        <!-- Footer End -->
+      </div>
+    </nav>
+    <nav class="nav sub-nav">
+      <div
+        class="container d-flex align-items-center justify-content-between flex-wrap"
+      >
+        <div class="d-flex align-items-center left-section">
+          <img src="./assets/menu-line.svg" alt="Menu" class="menu-icon" />
+          <ul class="nav ms-3 flex-wrap">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Public News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Personal News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link highlighted" href="#">Crime News</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btns_div">
+          <button
+            type="button"
+            class="btn btn-sign-up d-flex align-items-center mt-2 mt-md-0 d-none d-md-block"
+          >
+            New Post
+          </button>
+          <button
+            type="button"
+            class="btn btn-sign-up d-flex align-items-center mt-2 mt-md-0 d-none d-md-block"
+          >
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 custom_anacho_header_div">
+      <div class="mb-3 anchor__header">
+        <div class="anchor__title">Manjusha Rampalli</div>
+        <div class="anchor__sub-title">
+          Mannjusha Rampalli is a Well Known anchor turned actress.She began her
+          career with anchoring in Aata Kaavala, Paata Kaavala on Gemini
+          TV.Later she anchored shows like, Abhiruchi on ETV channel and Maa
+          Voori Vanta on MAA TV.Then Gayathri had the chance to interview some
+          of the famous superstars like Mahesh Babu, Akkineni Nageshwara Rao,
+          Pawan Kalyan, Allu Arjun, Srihari, and Balakrishna etc.She also acted
+          in some Movies Like Prema Kavali, Avunu,Attarintiki Daredi etc.
+        </div>
+      </div>
+    </div>
+    <div class="container custom_container">
+      <div class="main-container d-flex justify-content-between">
+        <div
+          class="col-lg-7 col-md-12 col-sm-12 anchorstarting_custom_profile_div"
+        >
+          <h2 class="top-stories-title">Anchor Profile</h2>
+          <div class="anchorstarting_main-container">
+            <div class="row g-3 align-items-start">
+              <div class="col-auto">
+                <img
+                  src="./assets/anchor_assets/rectangle-13.svg"
+                  alt="Profile Image"
+                  class="anchorstarting_profile-image"
+                />
+              </div>
+              <div class="col custom_card_details">
+                <div class="d-flex align-items-center">
+                  <h4 class="custom_card_name">Manjusha Rampalli</h4>
+                  <img
+                    src="./assets/anchor_assets/verified-badge-fill.svg"
+                    alt="Verified Badge"
+                    class="ms-2"
+                  />
+                </div>
+                <div class="d-flex mt-3">
+                  <span class="anchorstarting_badge-custom me-2">Anchor</span>
+                  <span class="anchorstarting_badge-custom me-2">Female</span>
+                  <span class="anchorstarting_badge-custom">Most Popular</span>
+                </div>
+                <p class="mt-3">10 Years Experience</p>
+                <p class="mt-2 custom_info">
+                  She began her career with anchoring in Aata Kaavala, Paata
+                  Kaavala on Gemini TV.
+                </p>
+                <div class="d-flex align-items-center mt-3">
+                  <img
+                    src="./assets/anchor_assets/chat-quote-fill.svg"
+                    alt="User Stories Icon"
+                    class="me-2"
+                  />
+                  <span class="font-weight-bold">85 User Stories</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="row justify-content-between align-items-center mt-5 mb-5"
+            >
+              <div class="col-auto d-flex align-items-center">
+                <div class="anchorstarting_rating-box me-3">
+                  <img
+                    src="./assets/anchor_assets/thumb-up-fill.svg"
+                    alt="Thumbs Up"
+                    class="me-2"
+                    width="20"
+                  />
+                  <span>99%</span>
+                </div>
+                <span class="anchorstarting_rating-label">Recommendation</span>
+              </div>
+              <div class="col-auto d-flex align-items-center">
+                <div class="anchorstarting_rating-box me-3">
+                  <img
+                    src="./assets/anchor_assets/shining-2-fill.svg"
+                    alt="Excellence Star"
+                    class="me-2"
+                    width="20"
+                  />
+                  <span>4.2</span>
+                </div>
+                <span class="anchorstarting_rating-label">Excellence</span>
+              </div>
+            </div>
+
+            <hr class="mt-5 mb-5" />
+
+            <div class="row align-items-start mb-3 d-flex flex-column">
+              <div class="col-auto">
+                <div class="anchorstarting_badge-container">
+                  <img
+                    src="./assets/shield-user-fill.svg"
+                    alt="Shield Icon"
+                    class="me-2"
+                    width="20"
+                  />
+                  PressClub Assured
+                </div>
+              </div>
+              <div class="col mt-3">
+                <p class="mb-1">Next Opens today at 08:30 AM</p>
+              </div>
+            </div>
+
+            <div class="mb-4 mt-4">
+              <strong class="text-uppercase mb-2">Next available at</strong>
+              <div class="row g-3">
+                <div class="col-12 col-md-6 d-flex flex-column">
+                  <div class="d-flex align-items-center mb-2">
+                    <img
+                      src="./assets/anchor_assets/home-7-line.svg"
+                      alt="Clock Icon"
+                      class="me-2"
+                      width="20"
+                    />
+                    <span>09:00 AM, Today</span>
+                  </div>
+                  <button class="anchorstarting_btn-custom">
+                    Contact Anchor
+                  </button>
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column">
+                  <div class="d-flex align-items-center mb-2">
+                    <img
+                      src="./assets/anchor_assets/home-7-line-2.svg"
+                      alt="Clock Icon"
+                      class="me-2"
+                      width="20"
+                    />
+                    <span>09:00 AM, Today</span>
+                  </div>
+                  <button class="anchorstarting_btn-custom">
+                    Book Your Interview
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 col-md-6 col-sm-12">
+          <div class="headline-container">
+            <h2 class="top-stories-title">You may like others</h2>
+            <div class="d-flex flex-column mt-2 gap-3">
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="./assets/anchor_assets/anchor-1.svg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <strong>Rashmi Gautam</strong>
+                  <p class="headline-title">
+                    Rashmi was born7 April 1988.Delhi.She was a leader in a
+                    dance reality show named
+                  </p>
+                  <p class="headline-time">10 minutes ago</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="./assets/anchor_assets/anchor-2.svg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <strong>Anasuya Bharadwaj</strong>
+                  <p class="headline-title">
+                    Anasuya is a popular face on small screen and she started
+                    her career as Maa Music VJ in Morning Mantra and News..
+                  </p>
+                  <p class="headline-time">Sep 24, 4:06 AM</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="./assets/anchor_assets/anchor-3.svg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <strong>Suma Kanakala</strong>
+                  <p class="headline-title">
+                    Suma is Telugu TV anchor and actress.Her became famous with
+                    the show Talk of the town,She is an active social worker,
+                    spreading awareness..
+                  </p>
+                  <p class="headline-time">Sep 27, 3:22 AM</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="./assets/anchor_assets/anchor-4.svg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <strong>Ashwini Sharma</strong>
+                  <p class="headline-title">
+                    Ashwini Sharma is popular Telugu TV Anchor & Host for Audio
+                    Functions and Events.
+                  </p>
+                  <p class="headline-time">Sep 26, 6:56 PM</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="./assets/anchor_assets/anchor-5.svg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <strong>Gayatri Bhargavi</strong>
+                  <p class="headline-title">
+                    Gayatri Bhargavi is also popular as host in Telugu Events
+                    like Audio & Award Functions.She Studied in S.Hussain Zaheer
+                    Memorial High School..
+                  </p>
+                  <p class="headline-time">Sep 27, 6:32 AM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="top-bar"></div>
+      <footer class="footer-bg py-3">
+        <div class="container">
+          <div class="text-center">
+            <a href="#" class="footer-link">Terms of Use</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Contact the Press Club</a>
+            <a href="#" class="footer-link">About us</a>
+            <a href="#" class="footer-link">Cookies</a>
+            <a href="#" class="footer-link">Do not share ore sell my info</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

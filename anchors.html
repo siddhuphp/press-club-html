@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anchors</title>
+    <link
+      href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md custom-nav">
+      <div class="container justify-content-between align-items-center">
+        <div class="d-flex align-items-center" id="nav_div">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logo.svg" alt="PressClub" class="logo" />
+          </a>
+          <form class="form-inline ms-3 w-100 w-md-auto">
+            <div class="input-group w-100">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </div>
+          </form>
+          <div class="icons_cont">
+            <div class="icon_div">
+              <img src="./assets/detailsPage_assets/icons-1.svg" alt="logo" />
+            </div>
+            <div class="icon_div">
+              <img src="./assets/detailsPage_assets/icons-1.svg" alt="logo" />
+            </div>
+            <div class="icon_div" id="search_cont">
+              <img src="./assets/detailsPage_assets/icons-1.svg" alt="search" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-none input-group w-100 d-flex custom_search_div"
+          id="search_div"
+        >
+          <input
+            type="text"
+            class="input_cont"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <p id="close_search">❌</p>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="d-none d-md-block">
+          <div class="btn-group d-flex flex-wrap custom-btn-group">
+            <button type="button" class="btn btn-feed">FEED</button>
+            <button type="button" class="btn btn-category">ADS</button>
+            <button type="button" class="btn btn-category">SERVICES</button>
+            <button type="button" class="btn btn-category">INTERVIEWS</button>
+            <button type="button" class="btn btn-category">ANCHORS</button>
+          </div>
+        </div>
+        <!-- Desktop Menu End -->
+
+        <!-- Footer Menu   -->
+        <div class="d-block d-md-none">
+          <div class="mobile-menu">
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/ads.svg" /> Ads
+            </button>
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/services.svg" /> Services
+            </button>
+            <button type="button" class="btn post">
+              <div class="icon"><img src="assets/menu-icons/post.svg" /></div>
+              <span>Post</span>
+            </button>
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/interview.svg" /> Interviews
+            </button>
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/anchors.svg" /> Anchors
+            </button>
+          </div>
+        </div>
+        <!-- Footer End -->
+      </div>
+    </nav>
+    <nav class="nav sub-nav">
+      <div
+        class="container d-flex align-items-center justify-content-between flex-wrap"
+      >
+        <div class="d-flex align-items-center left-section">
+          <img src="./assets/menu-line.svg" alt="Menu" class="menu-icon" />
+          <ul class="nav ms-3 flex-wrap">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Public News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Personal News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link highlighted" href="#">Crime News</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btns_div">
+          <button
+            type="button"
+            class="btn btn-sign-up d-flex align-items-center mt-2 mt-md-0 d-none d-md-block"
+          >
+            New Post
+          </button>
+          <button
+            type="button"
+            class="btn btn-sign-up d-flex align-items-center mt-2 mt-md-0 d-none d-md-block"
+          >
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-4 anchor">
+      <div class="mb-3 anchor__header">
+        <div class="anchor__title">Anchors</div>
+        <div class="anchor__sub-title">
+          A recent report, which details poor working conditions and rampant
+          sexual harassment faced by women in Malayalam-language cinema, is
+          causing seismic upheavals in the entertainment industry in India.
+        </div>
+      </div>
+
+      <div class="row gy-4 anchor__row">
+        <div class="col-md-3 anchor__field">
+          <label class="form-label anchor__label" for="industry"
+            >Choose Industry</label
+          >
+          <select id="industry" class="form-select anchor__select">
+            <option>Telugu</option>
+            <option>Hindi</option>
+            <option>English</option>
+          </select>
+        </div>
+        <div class="col-md-3 anchor__field">
+          <label class="form-label anchor__label" for="gender">Gender</label>
+          <select id="gender" class="form-select anchor__select">
+            <option>Female</option>
+            <option>Male</option>
+            <option>Non-Binary</option>
+          </select>
+        </div>
+        <div class="col-md-3 anchor__field">
+          <label class="form-label anchor__label" for="recommendation"
+            >Recommendation</label
+          >
+          <select id="recommendation" class="form-select anchor__select">
+            <option>Popularity</option>
+            <option>Rating</option>
+            <option>Newest</option>
+          </select>
+        </div>
+        <div class="col-md-3 anchor__field">
+          <label class="form-label anchor__label" for="eventType"
+            >Event Type</label
+          >
+          <select id="eventType" class="form-select anchor__select">
+            <option>Inauguration</option>
+            <option>Workshop</option>
+            <option>Seminar</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="container anchorcards">
+      <div class="row row-cols-1 row-cols-md-4 g-4 anchorcards__row">
+        <div class="col anchorcards__col">
+          <div class="profile-card anchorcards__card">
+            <img
+              src="./assets/anchorsPage_assets/image-1.svg"
+              alt="Profile"
+              class="profile-img anchorcards__img"
+            />
+            <div class="mt-3 anchorcards__info">
+              <h5 class="profile-name anchorcards__name">Jhansi</h5>
+              <p class="profile-description anchorcards__description">
+                Jhansi is a Telugu TV anchor and actress. Her fame grew with the
+                show Talk of the Town. She is an active social worker, spreading
+                awareness in the areas of HIV/AIDS, child marriage,...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col anchorcards__col">
+          <div class="profile-card anchorcards__card">
+            <img
+              src="./assets/anchorsPage_assets/image-2.svg"
+              alt="Profile"
+              class="profile-img anchorcards__img"
+            />
+            <div class="mt-3 anchorcards__info">
+              <h5 class="profile-name anchorcards__name">Manjusha Rampalli</h5>
+              <p class="profile-description anchorcards__description">
+                Manjusha Rampalli s born on  18 December 1993.She hails from
+                Hyderabad, Telangana, India.She has made her acting debut from a
+                film named “Oka Manasu”.Her father Mr Nagendra Babu is a
+                producer in
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col anchorcards__col">
+          <div class="profile-card anchorcards__card">
+            <img
+              src="./assets/anchorsPage_assets/image-3.svg"
+              alt="Profile"
+              class="profile-img anchorcards__img"
+            />
+            <div class="mt-3 anchorcards__info">
+              <h5 class="profile-name anchorcards__name">Rashmi Gautam</h5>
+              <p class="profile-description anchorcards__description">
+                Rashmi was born7 April 1988.Delhi.She was a leader in a dance
+                reality show named Dhee.She has played the supporting role in a
+                Telugu movie Prasthanam in 2010.Her performance in Kandeen..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col anchorcards__col">
+          <div class="profile-card anchorcards__card">
+            <img
+              src="./assets/anchorsPage_assets/image-4.svg"
+              alt="Profile"
+              class="profile-img anchorcards__img"
+            />
+            <div class="mt-3 anchorcards__info">
+              <h5 class="profile-name anchorcards__name">Anasuya Bharadwaj</h5>
+              <p class="profile-description anchorcards__description">
+                Anasuya is a popular face on small screen and she started her
+                career as Maa Music VJ in Morning Mantra and News Reader in
+                Sakshi News shows.Anchor Anasuya 5 feet 8 inches beauty came to
+                light..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col anchorcards__col">
+          <div class="profile-card anchorcards__card">
+            <img
+              src="./assets/anchorsPage_assets/image-5.svg"
+              alt="Profile"
+              class="profile-img anchorcards__img"
+            />
+            <div class="mt-3 anchorcards__info">
+              <h5 class="profile-name anchorcards__name">Suma</h5>
+              <p class="profile-description anchorcards__description">
+                Suma is Telugu TV anchor and actress.Her became famous with the
+                show Talk of the town,She is an active social worker, spreading
+                awareness in the areas of HIV/AIDS, child marriage,...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col anchorcards__col">
+          <div class="profile-card anchorcards__card">
+            <img
+              src="./assets/anchorsPage_assets/image-6.svg"
+              alt="Profile"
+              class="profile-img anchorcards__img"
+            />
+            <div class="mt-3 anchorcards__info">
+              <h5 class="profile-name anchorcards__name">
+                Leela Chandana Thota 
+              </h5>
+              <p class="profile-description anchorcards__description">
+                Telugu anchor Leela Chandana(లీలా చందన) Thota was born and
+                brought up in the West Godavari district, Andhra Pradesh. She
+                has been into anchoring for the past 12 years..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col anchorcards__col">
+          <div class="profile-card anchorcards__card">
+            <img
+              src="./assets/anchorsPage_assets/image-7.svg"
+              alt="Profile"
+              class="profile-img anchorcards__img"
+            />
+            <div class="mt-3 anchorcards__info">
+              <h5 class="profile-name anchorcards__name">Jahnavi</h5>
+              <p class="profile-description anchorcards__description">
+                Jahnavi is popular Gemini TV Anchor & Telugu Side Actress
+                .Jahnavi was born on 26th March’1985.She hails from Eluru,
+                Andhra Pradesh.Her mother tongue is Telugu.She completed B.Com.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col anchorcards__col">
+          <div class="profile-card anchorcards__card">
+            <img
+              src="./assets/anchorsPage_assets/image-8.svg"
+              alt="Profile"
+              class="profile-img anchorcards__img"
+            />
+            <div class="mt-3 anchorcards__info">
+              <h5 class="profile-name anchorcards__name">Ashwini Sharma</h5>
+              <p class="profile-description anchorcards__description">
+                Ashwini Sharma is popular Telugu TV Anchor & Host for Audio
+                Functions and Events. Morning Mantra and News Reader in Sakshi
+                News shows.Anchor Anasuya 5 feet 8 inches beauty came to light..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col anchorcards__col">
+          <div class="profile-card anchorcards__card">
+            <img
+              src="./assets/anchorsPage_assets/image-9.svg"
+              alt="Profile"
+              class="profile-img anchorcards__img"
+            />
+            <div class="mt-3 anchorcards__info">
+              <h5 class="profile-name anchorcards__name">Keerthi</h5>
+              <p class="profile-description anchorcards__description">
+                KEERTHI is popular Gemini Tv Anchor.KEERTHI Gemini Tv Anchor
+                with the show Talk of the town,She is an active social worker,
+                spreading awareness in the areas of HIV/AIDS, child marriage,...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col anchorcards__col">
+          <div class="profile-card anchorcards__card">
+            <img
+              src="./assets/anchorsPage_assets/image-10.svg"
+              alt="Profile"
+              class="profile-img anchorcards__img"
+            />
+            <div class="mt-3 anchorcards__info">
+              <h5 class="profile-name anchorcards__name">Jayathi</h5>
+              <p class="profile-description anchorcards__description">
+                Jayathi is Telugu TV Anchor and Serial Actress.Jayathi also
+                Anchor in sun network channels Gemini TV.You can follow Jayathi
+                in facebook for Daily personal updates in profile
+                https://www.facebook.com/pg
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col anchorcards__col">
+          <div class="profile-card anchorcards__card">
+            <img
+              src="./assets/anchorsPage_assets/image-11.svg"
+              alt="Profile"
+              class="profile-img anchorcards__img"
+            />
+            <div class="mt-3 anchorcards__info">
+              <h5 class="profile-name anchorcards__name">Gayatri Bhargavi</h5>
+              <p class="profile-description anchorcards__description">
+                Gayatri Bhargavi is also popular as host in Telugu Events like
+                Audio & Award Functions.She Studied in S.Hussain Zaheer Memorial
+                High School, Hyderabad and completed her graduation in Bhadruka
+                Degree..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col anchorcards__col">
+          <div class="profile-card anchorcards__card">
+            <img
+              src="./assets/anchorsPage_assets/image-12.svg"
+              alt="Profile"
+              class="profile-img anchorcards__img"
+            />
+            <div class="mt-3 anchorcards__info">
+              <h5 class="profile-name anchorcards__name">Hari Teja</h5>
+              <p class="profile-description anchorcards__description">
+                Manasu Mamatha Fame Serial Actress Hari Teja is Telugu TV Anchor
+                & Artist who acted in Telugu TV Serials,Telugu Movies ,Telugu TV
+                Shows.Hari Teja is known name to Telugu Audience,She is acting
+                in ..
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more profile cards as needed -->
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="top-bar"></div>
+      <footer class="footer-bg py-3">
+        <div class="container">
+          <div class="text-center">
+            <a href="#" class="footer-link">Terms of Use</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Contact the Press Club</a>
+            <a href="#" class="footer-link">About us</a>
+            <a href="#" class="footer-link">Cookies</a>
+            <a href="#" class="footer-link">Do not share ore sell my info</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
