@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anchors</title>
+    <link
+      href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md custom-nav">
+      <div class="container justify-content-between align-items-center">
+        <div class="d-flex align-items-center" id="nav_div">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logo.svg" alt="PressClub" class="logo" />
+          </a>
+          <form class="form-inline ms-3 w-100 w-md-auto">
+            <div class="input-group w-100">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </div>
+          </form>
+          <div class="icons_cont">
+            <div class="icon_div">
+              <img src="./assets/detailsPage_assets/icons-1.svg" alt="logo" />
+            </div>
+            <div class="icon_div">
+              <img src="./assets/detailsPage_assets/icons-1.svg" alt="logo" />
+            </div>
+            <div class="icon_div" id="search_cont">
+              <img src="./assets/detailsPage_assets/icons-1.svg" alt="search" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-none input-group w-100 d-flex custom_search_div"
+          id="search_div"
+        >
+          <input
+            type="text"
+            class="input_cont"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <p id="close_search">❌</p>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="d-none d-md-block">
+          <div class="btn-group d-flex flex-wrap custom-btn-group">
+            <button type="button" class="btn btn-feed">FEED</button>
+            <button type="button" class="btn btn-category">ADS</button>
+            <button type="button" class="btn btn-category">SERVICES</button>
+            <button type="button" class="btn btn-category">INTERVIEWS</button>
+            <button type="button" class="btn btn-category">ANCHORS</button>
+          </div>
+        </div>
+        <!-- Desktop Menu End -->
+
+        <!-- Footer Menu   -->
+        <div class="d-block d-md-none">
+          <div class="mobile-menu">
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/ads.svg" /> Ads
+            </button>
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/services.svg" /> Services
+            </button>
+            <button type="button" class="btn post">
+              <div class="icon"><img src="assets/menu-icons/post.svg" /></div>
+              <span>Post</span>
+            </button>
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/interview.svg" /> Interviews
+            </button>
+            <button type="button" class="btn">
+              <img src="assets/menu-icons/anchors.svg" /> Anchors
+            </button>
+          </div>
+        </div>
+        <!-- Footer End -->
+      </div>
+    </nav>
+    <nav class="nav sub-nav inner-nav">
+      <div
+        class="container d-flex align-items-center justify-content-between flex-wrap"
+      >
+        <div class="d-flex align-items-center left-section">
+          <ul class="nav flex-wrap align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 19H19V9.97815L12 4.53371L5 9.97815V19H11V13H13V19ZM21 20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V9.48907C3 9.18048 3.14247 8.88917 3.38606 8.69972L11.3861 2.47749C11.7472 2.19663 12.2528 2.19663 12.6139 2.47749L20.6139 8.69972C20.8575 8.88917 21 9.18048 21 9.48907V20Z" fill="#004FAC"/>
+                  </svg>  Home
+              </a>
+            </li>
+
+            <li class="nav-item">              
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.1715 12.0007L8.22168 7.05093L9.6359 5.63672L15.9999 12.0007L9.6359 18.3646L8.22168 16.9504L13.1715 12.0007Z" fill="#004FAC"/>
+              </svg>
+            </li>
+
+            <li class="nav-item">
+              Anchor Profile
+            </li>
+          </ul>
+        </div>
+        <div class="btns_div">
+
+          <button type="button" class="btn btn-sign-up d-flex align-items-center mt-2 mt-md-0 d-none d-md-block">
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 custom_anacho_header_div">
+      
+	   <div class="col-lg-12 col-md-12 col-sm-12 anchorstarting_custom_profile_div">
+          <div>
+            <div class="row g-3 align-items-start">
+              <div class="col-md-2">
+                <img
+                  src="./assets/anchor_assets/rectangle-13.svg"
+                  alt="Profile Image"
+                  class="anchorstarting_profile-image"
+                />
+              </div>
+              <div class="col-md-7 custom_card_details">
+                <div class="d-flex align-items-center">
+                  <h4 class="custom_card_name">Manjusha Rampalli</h4>
+                  <img
+                    src="./assets/anchor_assets/verified-badge-fill.svg"
+                    alt="Verified Badge"
+                    class="ms-2"
+                  />
+                </div>
+                <div class="d-flex mt-3">
+                  <span class="anchorstarting_badge-custom me-2">Anchor</span>
+                  <span class="anchorstarting_badge-custom me-2">Female</span>
+                  <span class="anchorstarting_badge-custom">Most Popular</span>
+                </div>
+                
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <p class="d-flex gap-3">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.0003 18.3332C5.39795 18.3332 1.66699 14.6022 1.66699 9.99984C1.66699 5.39746 5.39795 1.6665 10.0003 1.6665C14.6027 1.6665 18.3337 5.39746 18.3337 9.99984C18.3337 14.6022 14.6027 18.3332 10.0003 18.3332ZM10.8337 9.99984V5.83317H9.16699V11.6665H14.167V9.99984H10.8337Z" fill="#999999"/>
+                        </svg>
+
+                      Joined Sept 2024
+                    </p>
+                    <div class="mt-2 custom_info d-flex gap-3">
+                      <div>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.08366 5.83333C2.08366 7.67428 3.57604 9.16667 5.41699 9.16667C7.25794 9.16667 8.75033 7.67428 8.75033 5.83333C8.75033 3.99238 7.25794 2.5 5.41699 2.5C3.57604 2.5 2.08366 3.99238 2.08366 5.83333ZM1.66699 17.5V13.75C1.66699 11.6789 3.34593 10 5.41699 10C7.48806 10 9.16699 11.6789 9.16699 13.75V17.5H1.66699ZM14.5837 9.16667C12.7427 9.16667 11.2503 7.67428 11.2503 5.83333C11.2503 3.99238 12.7427 2.5 14.5837 2.5C16.4246 2.5 17.917 3.99238 17.917 5.83333C17.917 7.67428 16.4246 9.16667 14.5837 9.16667ZM10.8337 17.5V13.75C10.8337 11.6789 12.5126 10 14.5837 10C16.6547 10 18.3337 11.6789 18.3337 13.75V17.5H10.8337Z" fill="#999999"/>
+                          </svg>
+                          
+                      </div>
+                       <div>0 Following</div>
+                       <div>0 Following</div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                      <img
+                        src="./assets/anchor_assets/chat-quote-fill.svg"
+                        alt="User Stories Icon"
+                        class="me-2"
+                      />
+                      <span class="font-weight-bold">85 User Stories</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="col-auto d-flex align-items-center mb-3">
+                      <div class="anchorstarting_rating-box me-3">
+                        <img
+                          src="./assets/anchor_assets/thumb-up-fill.svg"
+                          alt="Thumbs Up"
+                          class="me-2"
+                          width="20"
+                        />
+                        <span>99%</span>
+                      </div>
+                      <span class="anchorstarting_rating-label">Recommendation</span>
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                      <div class="anchorstarting_rating-box me-3">
+                        <img
+                          src="./assets/anchor_assets/shining-2-fill.svg"
+                          alt="Excellence Star"
+                          class="me-2"
+                          width="20"
+                        />
+                        <span>4.2</span>
+                      </div>
+                      <span class="anchorstarting_rating-label">Excellence</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-3 text-end">
+                <button class="anchorstarting_btn-custom"> 
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.7496 5.71208L14.2851 9.24764L6.03553 17.4972H2.5V13.9616L10.7496 5.71208ZM11.9281 4.53357L13.6958 2.7658C14.0213 2.44037 14.5489 2.44037 14.8743 2.7658L17.2314 5.12283C17.5568 5.44826 17.5568 5.9759 17.2314 6.30134L15.4636 8.0691L11.9281 4.53357Z" fill="white"/>
+                    </svg>
+                    
+                  Edit Profile
+                </button>
+              </div>
+
+
+            </div>
+
+           
+
+            <hr class="mt-5 mb-5" />
+
+
+
+            <div class="mb-4 mt-4">
+              <h2 class="top-stories-title">Overview Actions</h2>
+              <p>Your completed Overview at a Glance.</p>
+
+              <div class="mt-4">
+                <button class="anchorstarting_btn-tags"><img src="./assets/anchor_assets/user-line.svg" alt="Clock Icon" class="me-2" width="20" /> Title </button>
+                <button class="anchorstarting_btn-tags"><img src="./assets/anchor_assets/send-plane-line.svg" alt="Clock Icon" class="me-2" width="20" /> Post an Ad </button>
+                <button class="anchorstarting_btn-tags"><img src="./assets/anchor_assets/advertisement-line.svg" alt="Clock Icon" class="me-2" width="20" /> Manage Job AD’s </button>
+                <button class="anchorstarting_btn-tags"><img src="./assets/anchor_assets/advertisement-line.svg" alt="Clock Icon" class="me-2" width="20" /> Manage Event AD’s </button>
+                <button class="anchorstarting_btn-tags"><img src="./assets/anchor_assets/advertisement-line.svg" alt="Clock Icon" class="me-2" width="20" /> Manage Course AD’s </button>
+                <button class="anchorstarting_btn-tags"><img src="./assets/anchor_assets/movie-line.svg" alt="Clock Icon" class="me-2" width="20" /> Demo Videos & FAQ’s </button>
+                <button class="anchorstarting_btn-tags"><img src="./assets/anchor_assets/bank-line.svg" alt="Clock Icon" class="me-2" width="20" /> List my Law Practice/ Law Firm </button>
+                <button class="anchorstarting_btn-tags"><img src="./assets/anchor_assets/bill-line.svg" alt="Clock Icon" class="me-2" width="20" /> Billing </button>
+                <button class="anchorstarting_btn-tags"><img src="./assets/anchor_assets/user-line.svg" alt="Clock Icon" class="me-2" width="20" /> Account Setting </button>
+              </div>
+              
+            </div>
+
+            <hr class="mt-5 mb-5" />
+
+          </div>
+        </div>
+    </div>
+    <div class="container custom_container">
+      <div class="main-container d-flex justify-content-between">
+        <div class="col-lg-7 col-md-12 col-sm-12 anchorstarting_custom_profile_div">
+			<div class="mb-3 anchor__header">
+				<h2 class="top-stories-title mb-4">About</h2>
+				<div class="anchor__sub-title">
+				  Mannjusha Rampalli is a Well Known anchor turned actress.She began her
+				  career with anchoring in Aata Kaavala, Paata Kaavala on Gemini
+				  TV.Later she anchored shows like, Abhiruchi on ETV channel and Maa
+				  Voori Vanta on MAA TV.Then Gayathri had the chance to interview some
+				  of the famous superstars like Mahesh Babu, Akkineni Nageshwara Rao,
+				  Pawan Kalyan, Allu Arjun, Srihari, and Balakrishna etc.She also acted
+				  in some Movies Like Prema Kavali, Avunu,Attarintiki Daredi etc.
+				</div>
+
+        <h2 class="top-stories-title mt-4 mb-3">Check Availability</h2>
+        <div class="row g-3 mt-1">
+
+          <div class="col col-md-4 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <strong>Sunday</strong>
+            </div>                 
+          </div>
+
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>                 
+          </div>
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>
+          </div>
+          <div class="col col-md-2 d-flex flex-column">
+            <a href="">Edit</a>
+          </div>
+        </div>
+        <div class="row g-3 mt-1">
+
+          <div class="col col-md-4 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <strong>Sunday</strong>
+            </div>                 
+          </div>
+
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>                 
+          </div>
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>
+          </div>
+          <div class="col col-md-2 d-flex flex-column">
+            <a href="">Edit</a>
+          </div>
+        </div>
+        <div class="row g-3 mt-1">
+
+          <div class="col col-md-4 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <strong>Sunday</strong>
+            </div>                 
+          </div>
+
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>                 
+          </div>
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>
+          </div>
+          <div class="col col-md-2 d-flex flex-column">
+            <a href="">Edit</a>
+          </div>
+        </div>
+        <div class="row g-3 mt-1">
+
+          <div class="col col-md-4 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <strong>Sunday</strong>
+            </div>                 
+          </div>
+
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>                 
+          </div>
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>
+          </div>
+          <div class="col col-md-2 d-flex flex-column">
+            <a href="">Edit</a>
+          </div>
+        </div>
+        <div class="row g-3 mt-1">
+
+          <div class="col col-md-4 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <strong>Sunday</strong>
+            </div>                 
+          </div>
+
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>                 
+          </div>
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>
+          </div>
+          <div class="col col-md-2 d-flex flex-column">
+            <a href="">Edit</a>
+          </div>
+        </div>
+        <div class="row g-3 mt-1">
+
+          <div class="col col-md-4 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <strong>Sunday</strong>
+            </div>                 
+          </div>
+
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>                 
+          </div>
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>
+          </div>
+          <div class="col col-md-2 d-flex flex-column">
+            <a href="">Edit</a>
+          </div>
+        </div>
+        <div class="row g-3 mt-1">
+
+          <div class="col col-md-4 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <strong>Sunday</strong>
+            </div>                 
+          </div>
+
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>                 
+          </div>
+          <div class="col col-md-3 d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="./assets/anchor_assets/home-7-line.svg" alt="Clock Icon" class="me-2" width="20" />
+              <span>09:00 AM</span>
+            </div>
+          </div>
+          <div class="col col-md-2 d-flex flex-column">
+            <a href="">Edit</a>
+          </div>
+        </div>
+			</div>
+		</div>
+        <div class="col-lg-4 offset-lg-1 col-md-6 col-sm-12">
+          <div class="headline-container">
+            <h2 class="top-stories-title mb-4">Friends</h2>
+            <div class="d-flex flex-column mt-2 gap-3">
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="./assets/anchor_assets/anchor-1.svg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <strong>Rashmi Gautam</strong>
+                  <p class="headline-title">
+                    Rashmi was born7 April 1988.Delhi.She was a leader in a
+                    dance reality show named
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="./assets/anchor_assets/anchor-2.svg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <strong>Anasuya Bharadwaj</strong>
+                  <p class="headline-title">
+                    Anasuya is a popular face on small screen and she started
+                    her career as Maa Music VJ in Morning Mantra and News..
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="./assets/anchor_assets/anchor-3.svg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <strong>Suma Kanakala</strong>
+                  <p class="headline-title">
+                    Suma is Telugu TV anchor and actress.Her became famous with
+                    the show Talk of the town,She is an active social worker,
+                    spreading awareness..
+                  </p>
+                 
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="./assets/anchor_assets/anchor-4.svg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <strong>Ashwini Sharma</strong>
+                  <p class="headline-title">
+                    Ashwini Sharma is popular Telugu TV Anchor & Host for Audio
+                    Functions and Events.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <div class="img_div">
+                  <img
+                    src="./assets/anchor_assets/anchor-5.svg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div>
+                  <strong>Gayatri Bhargavi</strong>
+                  <p class="headline-title">
+                    Gayatri Bhargavi is also popular as host in Telugu Events
+                    like Audio & Award Functions.She Studied in S.Hussain Zaheer
+                    Memorial High School..
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="top-bar"></div>
+      <footer class="footer-bg py-3">
+        <div class="container">
+          <div class="text-center">
+            <a href="#" class="footer-link">Terms of Use</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Contact the Press Club</a>
+            <a href="#" class="footer-link">About us</a>
+            <a href="#" class="footer-link">Cookies</a>
+            <a href="#" class="footer-link">Do not share ore sell my info</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

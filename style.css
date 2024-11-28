@@ -174,6 +174,11 @@ body {
   border: none;
 }
 
+.btn-group .btn:hover{
+	background:var(--color-primary);
+	color:#fff;
+}
+
 .btn-feed {
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -263,6 +268,12 @@ body {
   text-transform: uppercase;
   color: var(--color-dark);
   padding: 0.8rem 0.25rem;
+}
+
+.inner-nav li .nav-link, .inner-nav li {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 .nav-link.highlighted {
@@ -749,11 +760,6 @@ textarea.form-control {
   margin-bottom: 10rem;
 }
 
-.anchorcards__col {
-  display: flex;
-  flex: 1 1 auto;
-}
-
 .anchorcards__card {
   display: flex;
   flex-direction: column;
@@ -903,7 +909,6 @@ textarea.form-control {
 .anchorstarting_rating-label {
   font-weight: 400;
   font-size: 1rem;
-  margin-top: 0.5rem;
 }
 
 .anchorstarting_divider-line {
@@ -922,15 +927,21 @@ textarea.form-control {
   font-size: 0.875rem;
 }
 
-.anchorstarting_btn-custom {
+.anchorstarting_btn-custom, .anchorstarting_btn-tags, .anchorstarting_btn-tags:hover {
   background-color: #004fac;
   color: white;
   border-radius: 0.5rem;
-  padding: 0.75rem;
-  width: 100%;
+  padding: 0.75rem 1.4rem;
   font-weight: 600;
   border: 0;
 }
+.anchorstarting_btn-tags{
+  background-color: #0098EC;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+
 
 .anchorstarting_custom_profile_div {
   font-family: "Roboto", sans-serif;
